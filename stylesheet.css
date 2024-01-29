@@ -1,3 +1,6 @@
+body{
+    padding-bottom:20px;
+}
 :root{
     --output_width: 145px;
     --width_main: calc((var(--button_width) + 2 * var(--padding)) * var(--buttons_in_row));
