@@ -1,0 +1,75 @@
+:root{
+    --output_width: 145px;
+    --width_main: calc((var(--button_width) + 2 * var(--padding)) * var(--buttons_in_row));
+    --buttons_in_row: 7;
+    --button_width: 70px;
+    --button_height:50px;
+    --padding:10px;
+}
+
+.output_area{
+    background-color:black;
+    color: white;
+    font-size: 35px;
+    border-width: 0px;
+    line-height: 50px;
+    padding: 9px;
+    resize: none;
+    width: 96%;
+    height: 50px;
+    user-select: none;
+    user-focus: none;
+    border-radius: 15px;
+    user-focus-pointer: none;
+    background-clip: content-box;
+    outline: none;
+    cursor: auto;
+}
+
+.main_div{
+    width: var(--width_main);
+    border-radius: 10px;
+    background-color: #171616; /*#cbcbcb*/
+    height: 420px;
+    margin: 25px auto
+}
+
+.button_div, .special_buttons, .operators {
+    /*center the numbers*/
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+
+    background-color: #3d3939;
+    padding: var(--padding);
+    background-clip: content-box;
+    float:left;
+    border-color: black;
+    border-radius: 50px;
+    width: var(--button_width);
+    height: var(--button_height);
+}
+
+.special_buttons{
+    background-color: #656262;
+}
+.operators{
+    background-color: #ffa22e;
+}
+
+#zero{
+    width: calc(var(--button_width) * 2 + 2 * var(--padding));
+}
+
+.operators, .special_buttons, .button_div:hover{
+    cursor: pointer;
+}
+
+.button_div, .operators{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body onload="init()">
+    <div class="main_div">
+        <textarea id="output_screen" class="output_area" readonly="readonly">0</textarea>
+
+        <div> <!--  (  )  n!  AC  +/-  %  /  -->
+            <div class="special_buttons">(</div>
+            <div class="special_buttons">)</div>
+            <div class="special_buttons">n&#33</div> <!--find how to put small space-->
+            <div class="special_buttons">AC</div>
+            <div class="special_buttons">&#177;</div>
+            <div class="special_buttons">%</div>
+            <div class="operators">&divide</div>
+
+        </div>
+
+        <div> <!--  x^2  x^3  x^y  1  2  3  x  -->
+            <div id="power_2" class="special_buttons">x&#178</div>
+            <div class="special_buttons">x&#179</div>
+            <div class="special_buttons">x&#696</div>
+            <div class="button_div">1</div>
+            <div class="button_div">2</div>
+            <div class="button_div">3</div>
+            <div class="operators">&times</div>
+
+        </div>
+
+        <div> <!--  sqrt_2  sqrt_3  sqrt_x  4  5  6  -    -->
+            <div class="special_buttons">&#8730<span style="text-decoration:overline;">&nbsp;x&nbsp;</span></div>
+            <div class="special_buttons">&#8731<span style="text-decoration:overline;">&nbsp;x&nbsp;</span></div>
+            <div class="special_buttons">&#739&#8730</div> <!--need to find symbol for nth sqrt-->
+            <div class="button_div">4</div>
+            <div class="button_div">5</div>
+            <div class="button_div">6</div>
+            <div class="operators">-</div>
+        </div>
+
+        <div> <!--  ln  e  e^x  7  8  9  +  -->
+            <div class="special_buttons">&#13265</div>
+            <div class="special_buttons">&#x1D452</div>
+            <div class="special_buttons">&#x1D452&#739</div>
+            <div class="button_div">7</div>
+            <div class="button_div">8</div>
+            <div class="button_div">9</div>
+            <div class="operators">+</div>
+        </div>
+
+        <div> <!--  log10  1\X  Rand  0  .  =  -->
+            <div class="special_buttons">&#13266;10</div>
+            <div class="special_buttons"><sup>1</sup>/<sub>x</sub>
+            </div>
+            <div class="special_buttons">Rand</div>
+            <div class="button_div" id="zero">0</div>
+            <div class="button_div">.</div>
+            <div class="operators">=</div>
+
+
+        </div>
+    </div>
+</body>
+</html>
